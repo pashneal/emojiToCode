@@ -36,6 +36,8 @@ while True:
         finalString += key + "\t" + mapping[key]
         finalString += "\n"
     finalString += "\n"
+    finalString += sentence
+    finalString += "\n"
     for letter in sentence:
         if letter in englishSymbols:
             letter = mapping[letter]
