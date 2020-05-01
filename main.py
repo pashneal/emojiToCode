@@ -5,7 +5,8 @@ import sys
 notPrintable = {'🔾', '🔿', '🕀', '🕁', '🕂', '🕃', '🕄', '🕅', '🕆', '🕇', '🕈', '🕨', '🕩', '🕪', '🕫', '🕬', '🕭', '🕮','📾'}
 viableCharacters  = [chr(i) for i in range(0x1F300, 0x1F578) if chr(i)
                      not in notPrintable]
-viableCharacters  += [chr(i) for i in range(0x1F5ff, 0x1F649) if chr(i) not                      in notPrintable]
+viableCharacters  += [chr(i) for i in range(0x1F5ff, 0x1F649) if chr(i) not
+                      in notPrintable]
 
 print(viableCharacters)
 englishSymbols = string.ascii_letters + string.digits
