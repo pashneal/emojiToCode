@@ -16,14 +16,14 @@ filename = input("Enter filename to write to ")
 f = input("Should capitals also be encoded? (y or n) ")
 while f not in "yn":
     print("Please type y or n")
-    f = (">> ")
+    f = input(">> ")
 if "n" == f[0]:
     englishSymbols =englishSymbols.replace(string.ascii_uppercase, "")
 
 f = input("Should digits also be encoded? (y or n) ")
 while f not in "yn":
     print("Please type y or n")
-    f = (">> ")
+    f = input(">> ")
 if "n" == f[0]:
     englishSymbols =englishSymbols.replace(string.digits, "")
 
